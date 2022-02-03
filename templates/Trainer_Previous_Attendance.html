@@ -1,0 +1,33 @@
+{%extends 'index.html'%}
+{% load static %}
+{% block content %}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Attendance</h4>
+        {% comment %} <p class="card-description"> Horizontal form layout </p> {% endcomment %}
+        <form class="forms-sample" action="List">
+          
+          <div class="form-group row">
+            <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Start Date</label>
+            <div class="col-sm-9">
+              <input type="Date" class="form-control" id="exampleInputStartdate" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="exampleInputMobile" class="col-sm-3 col-form-label">End Date</label>
+            <div class="col-sm-9">
+                <input type="Date" class="form-control" id="exampleInputEnddate" >
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary me-2">Submit</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+{%endblock%}

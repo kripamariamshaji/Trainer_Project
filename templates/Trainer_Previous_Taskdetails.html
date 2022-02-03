@@ -1,0 +1,39 @@
+{%extends 'index.html'%}
+{% load static %}
+{% block content %}
+
+
+<div class="col-12 grid-margin">
+    <div class="card" >
+      <div class="card-body">
+        <div class="row">
+          <div class="col-8 col-md-10 mt-3">
+       <h4 class="card-description"> Task Details </h4>
+       </div>
+       <div class="col-4 col-md-2">
+       <img src="{% static 'assets/images/faces/face10.jpg' %}" class="img-fluid rounded-circle mb-3 " alt="image"  style="margin-right:20px">
+          </div>
+          </div>
+          <br><br>
+        <form class="form-sample">
+          <p class="card-description"> Calculator </p>
+          
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="" rows="2" style="height:80px;"></textarea>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+{% endblock %}
+
