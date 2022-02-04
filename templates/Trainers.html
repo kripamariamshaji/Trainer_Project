@@ -1,0 +1,167 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<body>
+
+
+  
+
+<div class="row ">
+  <div class="col-12 grid-margin">
+    <div class="card">
+      <div class="card-body">
+        <div class="row" >
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <h4> Trainers</h4>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <form>
+              <div class="input-group input-group-sm mb-3">
+                <input
+                  type="text"
+                  class="form-control text-white  "
+                  placeholder="Search . . ."
+                  style="border: green;"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text bg-success"
+                    ><i
+                      class="fas fa-search text-light"
+                      style="font-size: 18px"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- table start hear --> 
+
+          <div class="table-responsive">
+            <table class="table  table-bordered ">
+              <thead  style="background-color: black;">
+              
+                <tr>
+                   <th>Profile</th> 
+                  <th> Trainers Name </th>
+                  <th> Department</th>
+                  <th> Batch No. </th>
+                  <th> Current Project </th>
+                  <th> Phone No. </th>
+                  <th> Joining Date </th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="trteam">
+                    <img src="{% static '/assets/images/faces/face1.jpg' %}" alt="image" />
+                     </a>
+                  </td> 
+                  <td>
+                    
+                   
+                    <a href="trteam" style="text-decoration:none; color: #6C7293">
+                     <span class="ps-2">Henry Klein</span></a> 
+                  </td>
+                  <td> fullstack</td>
+                  <td> 56</td>
+                  <td> Dashboard </td>
+                  <td> 8569247535</td>
+                  <td> 04 Dec 2019 </td>
+                  <!-- <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td> -->
+                </tr>
+                <tr>
+                   <td>
+                    <a href="trteam">
+                  <img src="{% static '/assets/images/faces/face2.jpg' %}" alt="image" />
+                  </a>
+                </td> 
+                  <td>
+                    
+                    <a href="trteam" style="text-decoration:none; color: #6C7293">
+                    <span class="ps-2">Estella Bryan</span></a>
+                  </td>
+                  <td> python </td>
+                  <td> 42 </td>
+                  <td> Website </td>
+                  <td>8569485912</td>
+                  <td> 04 Dec 2019 </td>
+                  <!-- <td>
+                    <div class="badge badge-outline-warning">Pending</div>
+                  </td> -->
+                </tr>
+                <tr>
+                  <td>
+                    <a href="trteam">
+                    <img src="{% static '/assets/images/faces/face5.jpg' %}" alt="image" />
+                    </a>
+              </td> 
+
+                  <td>
+                    <a href="trteam" style="text-decoration:none; color: #6C7293">
+                    <span class="ps-2">Lucy Abbott</span></a>
+                  </td>
+                  <td> Network </td>
+                  <td> 85 </td>
+                  <td> App design </td>
+                  <td> 9632586915 </td>
+                  <td> 04 Dec 2019 </td>
+                  <!-- <td>
+                    <div class="badge badge-outline-danger">Rejected</div>
+                  </td> -->
+                </tr>
+                <tr>
+                   <td>
+                    <a href="trteam">
+                   <img src="{% static '/assets/images/faces/face3.jpg' %}" alt="image" />
+                  </a>
+                  </td> 
+                  <td>
+                   
+                    <a href="trteam" style="text-decoration:none; color: #6C7293">
+                    <span class="ps-2">Peter Gill</span></a>
+                  </td>
+                  <td> Flutter </td>
+                  <td> 4 </td>
+                  <td> Development </td>
+                  <td> 8569253915 </td>
+                  <td> 04 Dec 2019 </td>
+                  <!-- <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td> -->
+                </tr>
+                <tr>
+                  <td>
+                    <a href="trteam">
+                     <img src="{% static '/assets/images/faces/face4.jpg' %}" alt="image" />
+                     </a>
+                  </td> 
+                  <td>
+                    <a href="trteam" style="text-decoration:none; color: #6C7293">
+                    <span class="ps-2">Sallie Reyes</span></a>
+                  </td>
+                  <td> backend</td>
+                  <td> 58 </td>
+                  <td> Website </td>
+                  <td> 9268265312 </td>
+                  <td> 04 Dec 2019 </td>
+                  <!-- <td>
+                    <div class="badge badge-outline-success">Approved</div>
+                  </td> -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+{% endblock %}

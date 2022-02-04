@@ -5,6 +5,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
+def Trainers(request):
+    return render(request, 'Trainers.html')
+
 def TRteam(request):
     return render(request, 'Trainer_Team.html')
 

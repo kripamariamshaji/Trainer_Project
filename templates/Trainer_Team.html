@@ -1,52 +1,44 @@
-{%extends 'index.html'%}
-{% load static %}
-{% block content %}
+{%extends 'index.html'%} {% load static %} {% block content %}
 
-<div class="content-wrapper">
-    {% comment %} <div class="page-header">
-      <h3 class="page-title"> Typography </h3>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">UI Elements</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Typography</li>
-        </ol>
-      </nav>
-    </div> {% endcomment %}
 
-    <div class="row">
-      <div class="col-md-6 grid-margin stretch-card">
-
-        <div class="card" style="height:280px;">
-        <a href="#" style="text-decoration:none;">
+  <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card" style="height: 280px">
+        <a href="#" style="text-decoration: none">
           <div class="card-body">
-
-            <h1 class="card-title" style="margin-top:50px;">Current Team &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <i class="mdi mdi-account-supervisor text-danger" style="font-size:70px; "></i></h1>
-            
+            <h1 class="card-title" style="margin-top: 50px">
+              Current Team
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i
+                class="mdi mdi-account-supervisor text-danger"
+                style="font-size: 70px";
+              ></i>
+            </h1>
           </div>
         </a>
-        </div>
-        
-      </div>
-
-      <div class="col-md-6 grid-margin stretch-card">
-        <div class="card" style="height:280px;">
-            <a href="prteam" style="text-decoration:none;style="text-decoration:none;>  
-            <div class="card-body">
-                <h1 class="card-title" style="margin-top:50px;">Previous Team &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                  <i class="mdi mdi-google-circles-group text-primary" style="font-size:70px;  "></i></h1>
-
-                
-                
-            </div>
-            </a>
-        </div>
-            
       </div>
     </div>
-      
-      
-    
 
-</div>
+    <div class="col-md-6 grid-margin stretch-card">
+      <div class="card" style="height: 280px">
+        <a
+          href="prteam"
+          style="text-decoration:none;style="
+          text-decoration:none;
+        >
+          <div class="card-body">
+            <h1 class="card-title" style="margin-top: 50px">
+              Previous Team
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i
+                class="mdi mdi-google-circles-group text-primary"
+                style="font-size: 70px"
+              ></i>
+            </h1>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
 {%endblock%}
