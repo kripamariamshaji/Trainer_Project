@@ -1,12 +1,30 @@
 from django.shortcuts import render
 
 # Create your views here.
-
 def index(request):
-    return render(request, 'index.html')
-
-def Trainers(request):
-    return render(request, 'Trainers.html')
+    return render(request,'index.html')
+def trainer(request):
+    return render(request,'trainer.html')
+def team(request):
+    return render(request,'Trainer_Team.html')
+def current(request):
+    return render(request,'Trainer_Current_Team.html')
+def task(request):
+    return render(request,'Trainer_Current_task.html')
+def ass(request):
+    return render(request,'Trainer_Current_Assigned.html')
+def Trainees(request):
+    return render(request,'Trainer_Current_Trainees.html')
+def Empdetails(request):
+    return render(request,'Trainer_Current_Empdetails.html')
+def Attendance(request):
+    return render(request,'Trainer_Current_Attendance.html')
+def task1(request):
+    return render(request,'Trainer_Current_task1.html')
+def List(request):
+    return render(request,'Trainer_Current_AttendanceList.html')
+def tdetails(request):
+    return render(request,'Trainer_Current_Taskdetails.html')
 
 def TRteam(request):
     return render(request, 'Trainer_Team.html')
@@ -23,18 +41,17 @@ def Previous_Assigned(request):
 def Previous_Trainees(request):
     return render(request, 'Trainer_Previous_Trainees.html')
 
-def Empdetails(request):
+def PEmpdetails(request):
     return render(request, 'Trainer_Previous_Empdetails.html')
 
-def Attendance(request):
+def PAttendance(request):
     return render(request, 'Trainer_Previous_Attendance.html')
 
-def task1(request):
+def Ptask1(request):
     return render(request, 'Trainer_Previous_Task1.html')
 
-def List(request):
+def PList(request):
     return render(request, 'Trainer_Previous_Attendance_List.html')
 
-def tdetails(request):
+def Ptdetails(request):
     return render(request, 'Trainer_Previous_Taskdetails.html')
-
